@@ -128,6 +128,61 @@ h1{font-size:66px;line-height:1.02;letter-spacing:-3px}h1 em{background:none!imp
 @keyframes spin-spark{to{rotate:360deg}}@keyframes liquid-form{50%{border-radius:65% 35% 65% 35%;transform:rotate(15deg) translateY(-10px)}}
 @media(max-width:680px){.theme-picker{padding:18px 20px}.theme-options button{flex:1 0 43%;font-size:11px}body[data-design] h1{font-size:45px;letter-spacing:-2px}.abstract-stage{height:235px}.card{padding:24px 20px!important}}
 @media(prefers-reduced-motion:reduce){.abstract-stage *{animation:none!important}.theme-options button{transition:none}}
+
+/* Form-first layout: more space for registration, less for decoration. */
+header{max-width:1360px;padding:16px 28px}
+header .brand img{width:62px!important;height:62px!important}
+main{max-width:1360px;grid-template-columns:minmax(240px,.8fr) minmax(0,1.9fr);gap:30px;padding:28px 28px 55px;align-items:start}
+main>section:first-child{min-width:0}
+body h1,body[data-design] h1{font-size:39px!important;line-height:1.08;letter-spacing:-1.8px!important;margin:14px 0 16px}
+.intro{font-size:13px;line-height:1.7;max-width:360px}
+.tags{margin:16px 0;gap:6px}.tags span{font-size:10px;padding:7px 9px}
+main>.card{padding:34px 36px!important}
+.card h2{font-size:33px;margin-top:12px}.card .sub{font-size:14px;margin-bottom:25px;max-width:670px}
+#studentRegistration .grid{gap:22px 20px}
+#studentRegistration label{font-size:14px;margin-bottom:9px}
+#studentRegistration input,#studentRegistration select{font-size:16px;min-height:55px;padding:14px 15px}
+#studentRegistration .hint{font-size:11px;line-height:1.65}
+#studentRegistration .section-title{font-size:12px;margin-bottom:20px}
+#studentRegistration .divider{margin:27px 0}
+#studentRegistration .notice{font-size:12px;line-height:1.7}
+#studentRegistration .consent{font-size:12px;gap:11px}
+#studentRegistration .consent input{width:18px;min-height:18px;height:18px;padding:0}
+#studentRegistration .registration-cta{min-height:58px;font-size:16px;padding:18px}
+.lab{padding:17px;margin-top:18px;border-radius:14px}.lab .code{font-size:12px;line-height:1.6;margin:13px 0}
+.lab-bottom{padding-top:12px;gap:8px}.lab-bottom strong{font-size:13px}.lab-bottom small{font-size:10px}.orbit{font-size:22px}
+.benefits{gap:9px;margin:18px 0}.benefits div{font-size:11px;padding:8px}.benefits strong{font-size:11px}
+.payment-box{padding:18px;margin-top:22px}.payment-box h2{font-size:23px}.payment-box p{font-size:12px}
+.payment-box img{max-width:210px!important}.payment-links{gap:12px;font-size:11px}
+.skill-ticker{padding:9px 0;margin:15px 0;font-size:10px}
+.abstract-stage{height:125px!important;margin:18px 0}
+.abstract-stage .orb{width:66px!important;height:66px!important;left:calc(50% - 33px)!important;top:25px!important;box-shadow:none!important}
+.abstract-stage .orb:after{font-size:25px!important}
+.abstract-stage .halo{width:120px!important;height:43px!important;left:calc(50% - 60px)!important;top:36px!important;border-width:2px!important}
+.abstract-stage .spark{font-size:28px;top:18%;left:15%}.abstract-stage .spark.small{font-size:20px;right:15%;top:45%}
+.abstract-stage .code-chip{font-size:9px;bottom:9px;left:12px;letter-spacing:1px}.abstract-stage .stage-number{font-size:9px;top:9px;right:12px}
+.theme-picker{max-width:1360px;padding:15px 28px}
+.theme-options{gap:6px;margin-top:9px}.theme-options button{padding:8px 11px;font-size:11px}.theme-picker p{font-size:11px;margin-top:10px}
+@media(max-width:1000px) and (min-width:681px){
+main{grid-template-columns:minmax(210px,.7fr) minmax(0,1.5fr);gap:22px;padding-inline:22px}
+main>.card{padding:27px 24px!important}body h1,body[data-design] h1{font-size:33px!important}
+#studentRegistration .grid{gap:18px 14px}.card h2{font-size:28px}
+}
+@media(max-width:680px){
+header{padding:14px 18px}header .brand img{width:52px!important;height:52px!important}
+main{display:grid;grid-template-columns:1fr;gap:24px;padding:20px 16px 35px}
+main>.card{order:-1;padding:25px 20px!important}
+main>section:first-child{max-width:100%}
+.card h2{font-size:28px}.card .sub{font-size:13px}
+#studentRegistration .grid{grid-template-columns:1fr;gap:18px}
+#studentRegistration .wide{grid-column:auto}
+#studentRegistration input,#studentRegistration select{min-height:53px;font-size:16px}
+#studentRegistration .divider{margin:23px 0}
+body h1,body[data-design] h1{font-size:32px!important}
+.theme-picker{padding:13px 16px}.theme-options button{flex:1 0 43%;padding:8px;font-size:10px}
+.theme-picker p{line-height:1.6}.abstract-stage{height:110px!important}
+.benefits{grid-template-columns:1fr 1fr}.payment-box img{max-width:220px!important}
+}
 </style></head><body data-design="1"><div class="motion-bg" aria-hidden="true"><div class="aurora"></div><div class="aurora second"></div><canvas id="particles"></canvas></div>
 <section class="theme-picker" aria-label="Choose a registration theme"><small>Maa Sati Technologies · New collection / 8 themes</small><div class="theme-options"><button type="button" data-choice="1" aria-pressed="true">01 · Electric Poster</button><button type="button" data-choice="2" aria-pressed="false">02 · Paper Circuit</button><button type="button" data-choice="3" aria-pressed="false">03 · Liquid Mint</button><button type="button" data-choice="4" aria-pressed="false">04 · Midnight Academy</button><button type="button" data-choice="5" aria-pressed="false">05 · Sunset Studio</button><button type="button" data-choice="6" aria-pressed="false">06 · Blueprint Lab</button><button type="button" data-choice="7" aria-pressed="false">07 · Pixel Arcade</button><button type="button" data-choice="8" aria-pressed="false">08 · Chrome Future</button></div><p>Pick a design to explore. All themes include the same registration fields and required payment proof. <a href="index.html">Current registration ↗</a></p></section><header><div class="brand"><img src="assets/maa-sati-original-logo.png" alt="Maa Sati Tech original logo" style="width:88px;height:88px;object-fit:contain;border-radius:8px"><div>MAA SATI<small>TECHNOLOGIES</small></div></div><span class="pill"><span class="dot"></span>STUDENT REGISTRATION</span></header>
 <main><section><div class="eyebrow">One week. Your first creation.</div><h1>Don't just use tech.<br><em>Learn to build it.</em></h1><p class="intro">Turn your ideas into real projects. Learn coding, AI and better prompting — step by step, starting with the basics.</p><div class="tags"><span>Classes 9–12</span><span>Beginner friendly</span><span>1-week session</span></div>
@@ -137,12 +192,12 @@ h1{font-size:66px;line-height:1.02;letter-spacing:-3px}h1 em{background:none!imp
 <form id="studentRegistration">
 <div class="section-title">01 &nbsp; STUDENT DETAILS</div>
 <div class="grid">
-<div class="wide"><label for="studentName">Student full name *</label><input id="studentName" name="studentName" autocomplete="name" required minlength="2" maxlength="80" placeholder="Student’s full name"></div>
-<div class="wide"><label for="studentEmail">Email address *</label><input id="studentEmail" name="studentEmail" type="email" autocomplete="email" required maxlength="160" placeholder="student@example.com"><p class="hint">Use the student’s or parent’s email address. Enter this email again in the final Google Form to receive a copy of your registration.</p></div>
+<div><label for="studentName">Student full name *</label><input id="studentName" name="studentName" autocomplete="name" required minlength="2" maxlength="80" placeholder="Student’s full name"></div>
+<div><label for="studentEmail">Email address *</label><input id="studentEmail" name="studentEmail" type="email" autocomplete="email" required maxlength="160" placeholder="student@example.com"><p class="hint">Use the student’s or parent’s email address. Enter this email again in the final Google Form to receive a copy of your registration.</p></div>
 <div><label for="studentDob">Date of birth *</label><input id="studentDob" name="studentDob" type="date" required max="2026-11-05"></div>
 <div><label for="studentClass">Class *</label><select id="studentClass" name="studentClass" required><option value="">Select class</option><option>Class 9</option><option>Class 10</option><option>Class 11</option><option>Class 12</option></select></div>
-<div class="wide"><label for="studentSchool">School name *</label><input id="studentSchool" name="studentSchool" required minlength="2" maxlength="140" placeholder="Full school name"></div>
-<div class="wide"><label for="studentCity">City / town *</label><input id="studentCity" name="studentCity" autocomplete="address-level2" required minlength="2" maxlength="80" placeholder="City / town"></div>
+<div><label for="studentSchool">School name *</label><input id="studentSchool" name="studentSchool" required minlength="2" maxlength="140" placeholder="Full school name"></div>
+<div><label for="studentCity">City / town *</label><input id="studentCity" name="studentCity" autocomplete="address-level2" required minlength="2" maxlength="80" placeholder="City / town"></div>
 </div>
 <div class="divider"></div><div class="section-title">02 &nbsp; PARENT / GUARDIAN CONTACT</div>
 <label for="guardianPhone">Parent / guardian WhatsApp number *</label><input id="guardianPhone" name="guardianPhone" type="tel" inputmode="numeric" autocomplete="tel-national" required pattern="[6-9][0-9]{9}" maxlength="10" placeholder="10-digit mobile number">
