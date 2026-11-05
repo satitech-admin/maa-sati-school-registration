@@ -27,69 +27,6 @@ header{border-color:#5caaff20;position:relative}header .brand img{box-shadow:0 0
 @media(max-width:680px){header .brand img{width:68px!important;height:68px!important}.brand{gap:9px}header{gap:12px}.pill{font-size:8px;letter-spacing:.4px;padding:8px}.aurora{width:120vw;height:120vw;filter:blur(55px)}.benefits{gap:10px}.benefits div{padding:9px}.card{backdrop-filter:none}h1{letter-spacing:-2px}}
 @media(prefers-reduced-motion:reduce){.motion-bg:before{animation:none}#particles{display:none}.aurora{animation:none}}
 .payment-box{margin-top:30px;padding:24px;border:1px solid #75cbff40;background:#0a1935bb;border-radius:22px}.payment-box h2{font:600 28px 'Space Grotesk';margin:12px 0}.payment-box p{font-size:13px;line-height:1.8;color:var(--muted)}.payment-links{display:flex;flex-wrap:wrap;gap:18px;color:#9be6ff;font-size:12px}.payment-box a:focus-visible{outline:2px solid #9be6ff}@media(max-width:680px){.payment-box{padding:18px}} .registration-cta{display:block;padding:17px 18px;border-radius:12px;background:linear-gradient(110deg,#6ae5ff,#a9b8ff);color:#07162c!important;font-size:14px;font-weight:700;text-decoration:none;text-align:center;box-shadow:0 8px 28px #4fbaff26;transition:transform .2s}.registration-cta:hover{transform:translateY(-2px)} #studentRegistration input,#studentRegistration select{background:#0a1730;color:#e5f3ff;border-color:#6ca9de44;color-scheme:dark}#studentRegistration label{color:#d5e7fb}#studentRegistration input[type=file]{font-size:12px;padding:12px 8px}#studentRegistration .divider{background:#79bcff30}#studentRegistration .registration-cta:disabled{cursor:not-allowed} 
-/* Five student registration themes; original QR and submission flow retained. */
-:root{--t-bg:#060b20;--t-panel:#101b3c;--t-ink:#eff6ff;--t-muted:#b2c3e3;--t-accent:#7de9ff;--t-line:#6eb7ff40;--t-input:#08132d;--t-shadow:0 25px 80px #0005}
-body{background:var(--t-bg)!important;color:var(--t-ink);padding-bottom:30px}
-.theme-picker{position:relative;z-index:2;max-width:1240px;margin:18px auto 0;padding:18px 30px;border-bottom:1px solid var(--t-line)}
-.theme-picker small{display:block;font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:var(--t-muted);margin-bottom:12px}
-.theme-options{display:flex;gap:9px;flex-wrap:wrap}.theme-options button{border:1px solid var(--t-line);background:var(--t-panel);color:var(--t-ink);padding:11px 15px;border-radius:99px;font:600 12px 'DM Sans',sans-serif;cursor:pointer}
-.theme-options button[aria-pressed=true]{background:var(--t-accent);color:var(--t-bg);border-color:var(--t-accent)}.theme-picker p{font-size:12px;color:var(--t-muted);margin-bottom:0}.theme-picker a{color:var(--t-accent)}
-header,.footer{border-color:var(--t-line)}.intro,.sub,.hint,.trust,.step,.consent,.footer,.benefits div,.payment-box p{color:var(--t-muted)!important}
-h1,h2,.brand,.benefits strong,#studentRegistration label{color:var(--t-ink)!important}
-h1 em{background:none!important;-webkit-text-fill-color:var(--t-accent);color:var(--t-accent)}
-.eyebrow{color:var(--t-accent)}.card,.payment-box,.lab{background:var(--t-panel)!important;border-color:var(--t-line)!important;box-shadow:var(--t-shadow)}
-.tags span,.pill{background:var(--t-panel);border-color:var(--t-line);color:var(--t-ink)}
-#studentRegistration input,#studentRegistration select{background:var(--t-input)!important;color:var(--t-ink)!important;border-color:var(--t-line)!important;color-scheme:dark}
-#studentRegistration input:focus,#studentRegistration select:focus{outline:2px solid var(--t-accent);outline-offset:2px;box-shadow:none}
-#studentRegistration .divider{background:var(--t-line)}.section-title{color:var(--t-accent)}
-.notice{background:var(--t-input);color:var(--t-muted)}.registration-cta{background:var(--t-accent);color:var(--t-bg)!important;box-shadow:none}
-.card a,.payment-links{color:var(--t-accent)}.lab-top,.lab-bottom small,.code{color:var(--t-muted)}.code b{color:var(--t-accent)}
-.theme-art{height:180px;margin:24px 0;position:relative;display:grid;place-items:center;overflow:hidden;border:1px solid var(--t-line);border-radius:24px;background:var(--t-panel)}
-.theme-art .planet{width:112px;height:112px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#daefff,#4f75f7 45%,#252451 75%);box-shadow:0 0 70px #7c68ff70;animation:float 5s ease-in-out infinite}
-.theme-art .ring{position:absolute;width:230px;height:70px;border:2px solid var(--t-accent);border-radius:50%;transform:rotate(-25deg);box-shadow:0 0 25px #7de9ff30}
-.theme-art .art-caption{position:absolute;bottom:14px;right:18px;font:11px monospace;letter-spacing:1px;color:var(--t-muted)}
-.theme-art .art-code{display:none}
-[data-theme="1"] h1{font-size:70px;max-width:500px}[data-theme="1"] .card{border-top:3px solid #7de9ff}
-[data-theme="2"]{--t-bg:#f6f2e8;--t-panel:#fffdf6;--t-ink:#232326;--t-muted:#57555f;--t-accent:#6442cc;--t-line:#292331;--t-input:#f6f1ff;--t-shadow:7px 7px 0 #28232e}
-[data-theme="2"] .motion-bg{display:none}[data-theme="2"]{background-image:radial-gradient(#c1b8a5 1px,transparent 1px)!important;background-size:22px 22px!important}
-[data-theme="2"] h1{font-size:62px;transform:rotate(-2deg);letter-spacing:-3px}[data-theme="2"] h1 em{background:#d3f56a!important;-webkit-text-fill-color:#222;padding:0 8px}
-[data-theme="2"] .card,[data-theme="2"] .payment-box,[data-theme="2"] .lab{border:2px solid #28232e;border-radius:12px;backdrop-filter:none}
-[data-theme="2"] .tags span{border:2px solid #28232e;box-shadow:3px 3px 0 #28232e;border-radius:4px;transform:rotate(-3deg)}
-[data-theme="2"] .tags span:nth-child(2){transform:rotate(3deg);background:#ffe88d}
-[data-theme="2"] .theme-art{background:#d3f56a;border:2px solid #28232e;border-radius:10px;transform:rotate(2deg)}
-[data-theme="2"] .planet{border-radius:22px;background:#a58bf5;box-shadow:8px 8px 0 #292331;transform:rotate(-12deg)}
-[data-theme="2"] .ring{width:65px;height:65px;left:20%;top:25%;border:4px solid #28232e;border-radius:14px;transform:rotate(20deg)}
-[data-theme="2"] #studentRegistration input,[data-theme="2"] #studentRegistration select{color-scheme:light;border-radius:5px}
-[data-theme="2"] .registration-cta{border:2px solid #292331!important;border-radius:6px;box-shadow:4px 4px 0 #292331}
-[data-theme="3"]{--t-bg:#070d0b;--t-panel:#0c1712;--t-ink:#dfffe9;--t-muted:#9bbbaa;--t-accent:#8bff8d;--t-line:#8bff8d40;--t-input:#06100a;--t-shadow:none}
-[data-theme="3"]{font-family:monospace}[data-theme="3"] h1,[data-theme="3"] h2,[data-theme="3"] .brand,[data-theme="3"] label{font-family:monospace}
-[data-theme="3"] h1{font-size:54px;line-height:1.12;letter-spacing:-2px}
-[data-theme="3"] .card,[data-theme="3"] .lab,[data-theme="3"] .payment-box,[data-theme="3"] .tags span,[data-theme="3"] .theme-art{border-radius:4px;backdrop-filter:none}
-[data-theme="3"] .motion-bg .aurora{display:none}[data-theme="3"] .motion-bg:before{background-image:linear-gradient(#8bff8d0b 1px,transparent 1px);background-size:100% 4px;mask-image:none}
-[data-theme="3"] .theme-art{justify-items:start;padding:25px}
-[data-theme="3"] .theme-art .planet,[data-theme="3"] .theme-art .ring{display:none}
-[data-theme="3"] .art-code{display:block;color:#8bff8d;font:15px/1.9 monospace;white-space:pre-line}
-[data-theme="3"] .art-code:after{content:"▌";animation:beacon 1s steps(2) infinite}
-[data-theme="3"] .registration-cta{border-radius:4px;font-family:monospace}
-[data-theme="4"]{--t-bg:#fff8ef;--t-panel:#fff;--t-ink:#30223c;--t-muted:#736279;--t-accent:#a43d18;--t-line:#d5bfae;--t-input:#fff8f0;--t-shadow:0 16px 45px #784d1710}
-[data-theme="4"] .motion-bg{display:none}[data-theme="4"] h1{font-family:Georgia,serif;font-size:68px;line-height:1.04;letter-spacing:-3px}
-[data-theme="4"] h1 em{font-style:italic}[data-theme="4"] .card{border-radius:36px 36px 12px 12px;padding:34px!important}
-[data-theme="4"] .lab{border-radius:50px 50px 14px 14px;background:#f8e4d1!important;backdrop-filter:none}
-[data-theme="4"] .theme-art{background:#f8d68c;border-radius:100px 100px 20px 20px}
-[data-theme="4"] .planet{background:linear-gradient(135deg,#ee9576,#c36aa2);border-radius:50% 50% 15% 15%;box-shadow:none}
-[data-theme="4"] .ring{border-color:#a43d18;width:190px;height:190px;right:12%;top:45%;border-radius:50%;opacity:.3}
-[data-theme="4"] #studentRegistration input,[data-theme="4"] #studentRegistration select{color-scheme:light;border-radius:14px}
-[data-theme="4"] .tags span{border-radius:30px;background:#fff0d3}[data-theme="4"] .registration-cta{border-radius:40px;color:white!important}
-[data-theme="5"]{--t-bg:#15102f;--t-panel:#251b49d9;--t-ink:#fcf4ff;--t-muted:#c2b5df;--t-accent:#edb5ff;--t-line:#c09bff50;--t-input:#1a1232;--t-shadow:0 24px 65px #09031d60}
-[data-theme="5"]{background:radial-gradient(ellipse at 5% 0%,#5b2f8d,transparent 60%),#15102f!important}
-[data-theme="5"] h1{font-size:66px;letter-spacing:-3px}[data-theme="5"] .card{border-radius:30px;border-top:1px solid #ffffff66}
-[data-theme="5"] .theme-art{background:linear-gradient(135deg,#44307b,#7b4d92);border-radius:30px}
-[data-theme="5"] .planet{background:radial-gradient(circle at 30% 30%,#ffdfef,#c892ff 50%,#7545be);box-shadow:0 0 55px #f9aaff88}
-[data-theme="5"] .ring{width:155px;height:155px;transform:rotate(25deg);border-radius:30%;animation:ring-turn 22s linear infinite}
-[data-theme="5"] .tags span{background:#ffffff0b;border-radius:30px}[data-theme="5"] .registration-cta{background:linear-gradient(110deg,#edb5ff,#a9c5ff)}
-@media(max-width:680px){.theme-picker{padding:15px 20px}.theme-options{gap:7px}.theme-options button{padding:10px 12px;font-size:11px}body[data-theme] h1{font-size:46px;letter-spacing:-2px}.theme-art{height:150px}.theme-options button{flex:1 0 29%}[data-theme="4"] .card{padding:25px 20px!important}}
-@media(prefers-reduced-motion:reduce){.theme-art *{animation:none!important}}
-
 /* Real photography and responsive motion */
 .photo-scene{position:relative;margin:28px 0 22px;padding:10px 10px 46px;border-radius:25px;background:var(--t-panel,#10203b);border:1px solid var(--t-line,#6eb7ff40);overflow:visible;--photo-x:0px;--photo-y:0px}
 .photo-main{margin:0;overflow:hidden;border-radius:18px;position:relative;aspect-ratio:16/10;background:#1b2743}
@@ -116,10 +53,85 @@ body.motion-ready .reveal-block.is-visible{opacity:1;transform:none}
 @keyframes spark-turn{to{transform:rotate(360deg)}}@keyframes skill-slide{to{transform:translateX(-50%)}}
 @media(max-width:680px){.photo-scene{margin-top:23px}.photo-main figcaption{font-size:21px}.photo-badge{font-size:9px;left:22px;top:22px}.photo-inset{animation:none}.photo-note{font-size:10px}.skill-track{animation-duration:32s}}
 @media(prefers-reduced-motion:reduce){.skill-track,.photo-inset,.photo-badge:before{animation:none!important}.photo-main>img{transform:none!important;transition:none!important}body.motion-ready .reveal-block{opacity:1;transform:none;transition:none}.registration-cta:after{display:none}}
-</style></head><body data-theme="1"><div class="scroll-progress" aria-hidden="true"></div><div class="motion-bg" aria-hidden="true"><div class="aurora"></div><div class="aurora second"></div><canvas id="particles"></canvas></div>
-<section class="theme-picker" aria-label="Choose a registration theme"><small>Maa Sati Technologies · 5 registration themes</small><div class="theme-options"><button type="button" data-choice="1" aria-pressed="true">01 · Cosmic Explorer</button><button type="button" data-choice="2" aria-pressed="false">02 · Creator Playground</button><button type="button" data-choice="3" aria-pressed="false">03 · Code Quest</button><button type="button" data-choice="4" aria-pressed="false">04 · Future Makers</button><button type="button" data-choice="5" aria-pressed="false">05 · Dream Lab</button></div><p>Choose a theme to preview it. Registration fields and payment requirements work the same in every theme. <a href="index.html">Current registration ↗</a></p></section><header><div class="brand"><img src="assets/maa-sati-original-logo.png" alt="Maa Sati Tech original logo" style="width:88px;height:88px;object-fit:contain;border-radius:8px"><div>MAA SATI<small>TECHNOLOGIES</small></div></div><span class="pill"><span class="dot"></span>STUDENT REGISTRATION</span></header>
+
+/* Eight original, photography-free themes */
+:root{--bg:#f5ed34;--ink2:#21183d;--accent:#21183d;--panel:#fffef5;--muted2:#5d566e;--edge:#21183d;--radius:10px;--shadow:7px 7px 0 #21183d}
+body{background:var(--bg)!important;color:var(--ink2)}.motion-bg{display:none}
+header,.footer{border-color:var(--edge)}h1,h2,.brand,.benefits strong,#studentRegistration label{color:var(--ink2)!important}
+h1{font-size:66px;line-height:1.02;letter-spacing:-3px}h1 em{background:none!important;-webkit-text-fill-color:var(--accent);color:var(--accent)}
+.intro,.sub,.hint,.trust,.step,.consent,.footer,.benefits div,.payment-box p{color:var(--muted2)!important}.eyebrow,.section-title{color:var(--accent)}
+.card,.lab,.payment-box{background:var(--panel)!important;border:1px solid var(--edge)!important;border-radius:var(--radius);box-shadow:var(--shadow);backdrop-filter:none}
+.card{border-top:4px solid var(--accent)!important}.tags span,.pill{background:var(--panel);color:var(--ink2);border-color:var(--edge);border-radius:var(--radius)}
+.lab-top,.code,.lab-bottom small{color:var(--muted2)}.code b{color:var(--accent)}
+#studentRegistration input,#studentRegistration select{background:var(--panel)!important;color:var(--ink2)!important;border-color:var(--edge)!important;border-radius:var(--radius);color-scheme:light}
+#studentRegistration input:focus,#studentRegistration select:focus{outline:2px solid var(--accent);outline-offset:2px;box-shadow:none}
+#studentRegistration .divider{background:var(--edge);opacity:.25}.notice{background:var(--bg);color:var(--muted2)}
+.registration-cta{background:var(--accent);color:var(--bg)!important;border-radius:var(--radius);box-shadow:none}.card a,.payment-links{color:var(--accent)}
+.skill-ticker{border-color:var(--edge);color:var(--accent)}
+.theme-picker{max-width:1240px;margin:0 auto;padding:22px 30px;border-bottom:1px solid var(--edge)}
+.theme-picker small{font-size:10px;text-transform:uppercase;letter-spacing:2px}.theme-options{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.theme-options button{font:600 12px 'DM Sans',sans-serif;border:1px solid var(--edge);background:var(--panel);color:var(--ink2);border-radius:var(--radius);padding:11px 14px;cursor:pointer;transition:transform .2s}
+.theme-options button:hover{transform:translateY(-3px)}.theme-options button[aria-pressed=true]{background:var(--accent);color:var(--bg)}.theme-picker p{font-size:12px;color:var(--muted2);margin-bottom:0}
+.abstract-stage{height:260px;position:relative;margin:28px 0;overflow:hidden;border:1px solid var(--edge);border-radius:var(--radius);background:var(--panel);box-shadow:var(--shadow);isolation:isolate}
+.abstract-stage .orb{position:absolute;width:150px;height:150px;left:calc(50% - 75px);top:45px;background:var(--accent);border-radius:50%;animation:shape-float 7s ease-in-out infinite}
+.abstract-stage .halo{position:absolute;width:235px;height:75px;left:calc(50% - 118px);top:82px;border:2px solid var(--ink2);border-radius:50%;transform:rotate(-25deg);animation:halo-sway 9s ease-in-out infinite}
+.abstract-stage .spark{position:absolute;font-size:55px;line-height:1;left:13%;top:18%;color:var(--accent);animation:spin-spark 24s linear infinite}
+.abstract-stage .spark.small{font-size:30px;left:auto;right:14%;top:58%;animation-direction:reverse}
+.abstract-stage .code-chip{position:absolute;left:20px;bottom:18px;font:700 12px monospace;letter-spacing:2px;color:var(--ink2)}
+.abstract-stage .stage-number{position:absolute;right:20px;top:14px;font:12px monospace;color:var(--muted2)}
+.abstract-stage .orb:after{content:"</>";position:absolute;inset:0;display:grid;place-items:center;color:var(--panel);font:700 43px monospace}
+[data-design="1"] .abstract-stage .orb{border-radius:4px;transform:rotate(15deg);background:#eb79ba;border:2px solid var(--edge);box-shadow:12px 12px 0 var(--edge)}
+[data-design="1"] h1{font-weight:700;text-transform:uppercase}[data-design="1"] .tags span:nth-child(2){transform:rotate(-4deg);background:#eb79ba}
+[data-design="1"] .abstract-stage .halo{border-radius:0;border-style:dashed}
+[data-design="2"]{--panel:#fbfaf4;--muted2:#5c6d60;--edge:#a8b4a4;--radius:3px;--shadow:0 12px 35px #263c2810}
+[data-design="2"]{background-image:linear-gradient(#315c4210 1px,transparent 1px),linear-gradient(90deg,#315c4210 1px,transparent 1px)!important;background-size:24px 24px!important}
+[data-design="2"] h1{font-family:Georgia,serif;font-size:62px;line-height:1.08;letter-spacing:-2px}[data-design="2"] h1 em{font-style:italic}
+[data-design="2"] .abstract-stage .orb{border-radius:45% 55% 65% 35%;background:#b3c5a0;box-shadow:14px 14px 0 #e0d7bc}
+[data-design="2"] .abstract-stage{background:repeating-linear-gradient(0deg,#fbfaf4 0 23px,#315c4215 24px)}
+[data-design="3"]{--panel:#f3fff9;--muted2:#3f7263;--edge:#8cd8b7;--radius:28px;--shadow:0 18px 65px #006a5615}
+[data-design="3"] h1{font-size:70px}[data-design="3"] .abstract-stage{border-radius:90px 25px 90px 25px;background:linear-gradient(135deg,#d7fbbc,#a7ebd7)}
+[data-design="3"] .abstract-stage .orb{background:linear-gradient(140deg,#006a56,#62ba8b);border-radius:35% 65% 42% 58%;animation:liquid-form 9s ease-in-out infinite}
+[data-design="3"] .abstract-stage .halo{border-width:12px;opacity:.35;width:200px;height:200px;top:20px;left:calc(50% - 100px)}
+[data-design="3"] .registration-cta{border-radius:99px}
+[data-design="4"]{--panel:#10162a;--muted2:#a7b3d0;--edge:#31405f;--radius:20px;--shadow:0 24px 65px #0004}
+[data-design="4"]{background:radial-gradient(ellipse at 20% 0,#202547,transparent 55%),#080b19!important}
+[data-design="4"] #studentRegistration input,[data-design="4"] #studentRegistration select{color-scheme:dark}
+[data-design="4"] .abstract-stage{background:radial-gradient(circle at 50% 50%,#383a6a,#10162a 70%)}
+[data-design="4"] .abstract-stage .orb{background:radial-gradient(circle at 30% 30%,#fbf2ff,#9094d7 50%,#37365e);box-shadow:0 0 50px #adb0ff40}
+[data-design="4"] .abstract-stage .halo{border-color:#c8cdff;box-shadow:0 0 25px #b4bbff30}
+[data-design="4"] h1{font-family:Georgia,serif;font-weight:400}
+[data-design="5"]{--panel:#fff9f3;--muted2:#8d6056;--edge:#e0b2a0;--radius:14px;--shadow:0 12px 40px #b6333010}
+[data-design="5"] .abstract-stage{background:#f2b78c;border-radius:120px 120px 10px 10px}
+[data-design="5"] .abstract-stage .orb{background:#b63330;border-radius:50% 50% 0 0;top:70px;height:175px}
+[data-design="5"] .abstract-stage .halo{width:175px;height:175px;top:28px;left:18%;border-color:#fff0e6;border-width:13px}
+[data-design="5"] h1{font-family:Georgia,serif;font-size:67px;letter-spacing:-2px}
+[data-design="5"] .card{border-radius:70px 14px 14px 14px;padding-top:38px!important}
+[data-design="6"]{--panel:#1239bb;--muted2:#d0dcff;--edge:#ffffff55;--radius:0px;--shadow:8px 8px 0 #06278d}
+[data-design="6"]{background-image:linear-gradient(#ffffff10 1px,transparent 1px),linear-gradient(90deg,#ffffff10 1px,transparent 1px)!important;background-size:36px 36px!important}
+[data-design="6"] h1{font-family:monospace;font-size:54px;letter-spacing:-2px}[data-design="6"] #studentRegistration input,[data-design="6"] #studentRegistration select{color-scheme:dark}
+[data-design="6"] .abstract-stage .orb{border:2px solid #d2ff72;background:transparent;border-radius:0;transform:rotate(45deg)}
+[data-design="6"] .abstract-stage .orb:after{color:#d2ff72}[data-design="6"] .abstract-stage .halo{border-style:dashed;border-color:white}
+[data-design="6"] .abstract-stage:before{content:"";position:absolute;inset:18px;border:1px dashed #ffffff40}
+[data-design="7"]{--panel:#2e1f42;--muted2:#d2bfe7;--edge:#705c87;--radius:2px;--shadow:6px 6px 0 #0c0714}
+[data-design="7"] h1{font:700 58px/1.1 monospace;letter-spacing:-3px}[data-design="7"] #studentRegistration input,[data-design="7"] #studentRegistration select{color-scheme:dark}
+[data-design="7"] .abstract-stage{background:repeating-linear-gradient(0deg,#2e1f42 0 3px,#332348 3px 5px)}
+[data-design="7"] .abstract-stage .orb{border-radius:0;width:120px;height:120px;left:calc(50% - 60px);box-shadow:12px 0 #ff927a,-12px 0 #ff927a,0 12px #ff927a,0 -12px #ff927a;background:#ffce55}
+[data-design="7"] .abstract-stage .orb:after{color:#20152f;font-size:35px}[data-design="7"] .abstract-stage .halo{border-radius:0;border-style:dashed;border-color:#bd9fff}
+[data-design="7"] .abstract-stage .spark{font-family:monospace;color:#bd9fff}
+[data-design="8"]{--panel:#f9fbfc;--muted2:#626c7a;--edge:#b8c2cf;--radius:32px;--shadow:0 20px 55px #26374515}
+[data-design="8"]{background:linear-gradient(145deg,#fff,#d8e0e8)!important}
+[data-design="8"] h1{font-weight:500;font-size:70px;letter-spacing:-4px}[data-design="8"] .abstract-stage{background:linear-gradient(120deg,#c7d1dc,#fff,#b1becc)}
+[data-design="8"] .abstract-stage .orb{background:linear-gradient(135deg,#fff,#8b99ad 35%,#f4f7fc 55%,#64748b);box-shadow:14px 15px 22px #34465b30}
+[data-design="8"] .abstract-stage .orb:after{color:#334155}[data-design="8"] .abstract-stage .halo{border:5px solid #ffffffaa}
+[data-design="8"] .card{border-color:#fff!important}[data-design="8"] .registration-cta{background:linear-gradient(110deg,#192438,#50617c);color:#fff!important}
+@keyframes shape-float{50%{translate:0 -13px;rotate:8deg}}@keyframes halo-sway{50%{transform:rotate(20deg) translateY(8px)}}
+@keyframes spin-spark{to{rotate:360deg}}@keyframes liquid-form{50%{border-radius:65% 35% 65% 35%;transform:rotate(15deg) translateY(-10px)}}
+@media(max-width:680px){.theme-picker{padding:18px 20px}.theme-options button{flex:1 0 43%;font-size:11px}body[data-design] h1{font-size:45px;letter-spacing:-2px}.abstract-stage{height:235px}.card{padding:24px 20px!important}}
+@media(prefers-reduced-motion:reduce){.abstract-stage *{animation:none!important}.theme-options button{transition:none}}
+</style></head><body data-design="1"><div class="motion-bg" aria-hidden="true"><div class="aurora"></div><div class="aurora second"></div><canvas id="particles"></canvas></div>
+<section class="theme-picker" aria-label="Choose a registration theme"><small>Maa Sati Technologies · New collection / 8 themes</small><div class="theme-options"><button type="button" data-choice="1" aria-pressed="true">01 · Electric Poster</button><button type="button" data-choice="2" aria-pressed="false">02 · Paper Circuit</button><button type="button" data-choice="3" aria-pressed="false">03 · Liquid Mint</button><button type="button" data-choice="4" aria-pressed="false">04 · Midnight Academy</button><button type="button" data-choice="5" aria-pressed="false">05 · Sunset Studio</button><button type="button" data-choice="6" aria-pressed="false">06 · Blueprint Lab</button><button type="button" data-choice="7" aria-pressed="false">07 · Pixel Arcade</button><button type="button" data-choice="8" aria-pressed="false">08 · Chrome Future</button></div><p>Pick a design to explore. All themes include the same registration fields and required payment proof. <a href="index.html">Current registration ↗</a></p></section><header><div class="brand"><img src="assets/maa-sati-original-logo.png" alt="Maa Sati Tech original logo" style="width:88px;height:88px;object-fit:contain;border-radius:8px"><div>MAA SATI<small>TECHNOLOGIES</small></div></div><span class="pill"><span class="dot"></span>STUDENT REGISTRATION</span></header>
 <main><section><div class="eyebrow">One week. Your first creation.</div><h1>Don't just use tech.<br><em>Learn to build it.</em></h1><p class="intro">Turn your ideas into real projects. Learn coding, AI and better prompting — step by step, starting with the basics.</p><div class="tags"><span>Classes 9–12</span><span>Beginner friendly</span><span>1-week session</span></div>
-<section class="photo-scene" aria-label="Coding and collaboration inspiration"><figure class="photo-main"><img src="assets/student-team.jpg" width="1100" height="619" fetchpriority="high" alt="Students collaborating around a laptop in a classroom"><figcaption>Big ideas start<br>with curious minds.</figcaption></figure><div class="photo-badge">LEARN TOGETHER · CREATE TOGETHER</div><img class="photo-inset" src="assets/student-coding.jpg" width="700" height="467" loading="lazy" alt="A learner working on code on a laptop"><span class="photo-note">Imagine what you could build.</span></section><div class="lab"><div class="lab-top"><span>YOUR FIRST BUILD</span><span>● LIVE LEARNING</span></div><div class="code"><b>&lt;your-future&gt;</b><br>&nbsp; idea + code + AI<br>&nbsp; = something you created ✦<br><b>&lt;/your-future&gt;</b></div><div class="lab-bottom"><span class="orbit" aria-hidden="true">✳</span><div><strong>Small steps. Real possibilities.</strong><small>Think it. Build it. Showcase it.</small></div></div></div>
+<div class="abstract-stage" aria-hidden="true"><span class="stage-number">MAA SATI / 01</span><div class="orb"></div><div class="halo"></div><span class="spark">✳</span><span class="spark small">✳</span><span class="code-chip">IDEA → CODE → CREATE</span></div><div class="lab"><div class="lab-top"><span>YOUR FIRST BUILD</span><span>● LIVE LEARNING</span></div><div class="code"><b>&lt;your-future&gt;</b><br>&nbsp; idea + code + AI<br>&nbsp; = something you created ✦<br><b>&lt;/your-future&gt;</b></div><div class="lab-bottom"><span class="orbit" aria-hidden="true">✳</span><div><strong>Small steps. Real possibilities.</strong><small>Think it. Build it. Showcase it.</small></div></div></div>
 <div class="skill-ticker" aria-label="Learn HTML, CSS, AI tools, creative thinking and prompt engineering"><div class="skill-track" aria-hidden="true"><span>✦ &nbsp; HTML & CSS</span><span>✦ &nbsp; AI TOOLS</span><span>✦ &nbsp; YOUR FIRST PROJECT</span><span>✦ &nbsp; CREATIVE THINKING</span><span>✦ &nbsp; PROMPT ENGINEERING</span><span>✦ &nbsp; BUILD & SHOWCASE</span><span>✦ &nbsp; HTML & CSS</span><span>✦ &nbsp; AI TOOLS</span><span>✦ &nbsp; YOUR FIRST PROJECT</span><span>✦ &nbsp; CREATIVE THINKING</span><span>✦ &nbsp; PROMPT ENGINEERING</span><span>✦ &nbsp; BUILD & SHOWCASE</span></div></div><div class="benefits"><div><strong>01 / Code with confidence</strong>HTML, CSS & JavaScript basics.</div><div><strong>02 / Work smarter with AI</strong>AI tools, vibe coding & prompts.</div><div><strong>03 / Make a mini project</strong>Build and present your own idea.</div><div><strong>04 / Earn your certificate</strong>After project submission & approval.</div></div><section class="payment-box" aria-labelledby="paymentTitle"><div class="eyebrow">SESSION PAYMENT</div><h2 id="paymentTitle">Scan to pay</h2><p>After payment, upload a screenshot of the successful transaction. Enter the payment date and time (IST) exactly as shown on your receipt.</p><a href="assets/payment-qr-only.png" target="_blank" rel="noopener" aria-label="Open original payment QR in full size"><img src="assets/payment-qr-only.png" alt="Maa Sati Technologies payment QR scanner" width="328" height="328" style="display:block;width:100%;max-width:280px;height:auto;object-fit:contain;margin:20px auto"></a><div class="payment-links"><a href="assets/payment-qr-only.png" target="_blank" rel="noopener">Open full-size QR ↗</a><a href="assets/payment-qr-only.png" download="Maa-Sati-Payment-QR.png">Download QR ↓</a></div><p class="hint">Upload: 1 image, maximum 10 MB. Google sign-in is required. Payment confirmation follows team verification.</p></section></section>
 <section class="card" aria-labelledby="formTitle" style="padding:28px"><div class="eyebrow">Student registration · Step 1 of 2</div><h2 id="formTitle">Your creator journey starts here.</h2><p class="sub">Enter your student details below. In the next step, review your details, enter your email address, upload your payment screenshot and click Submit.</p>
 <form id="studentRegistration">
@@ -141,7 +153,7 @@ body.motion-ready .reveal-block.is-visible{opacity:1;transform:none}
 <button class="registration-cta" type="submit" style="width:100%;border:0">Continue to screenshot upload →</button>
 <p class="hint" role="status">Registration is complete only after you click Submit on the next Google Form. If Google asks about an older draft, choose Continue to use these new details.</p></form>
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSf74z6sRA5GCNtO-6asZafJ6UGExi-uwbC0MPRt6gYCqKsQ/viewform" target="_blank" rel="noopener" style="display:inline-block;margin-top:22px">Open registration directly ↗</a></section></main>
-<footer class="footer"><span>© Maa Sati Technologies · Build. Learn. Grow.</span><span><a href="mailto:www.satitechinfo@gmail.com">Contact the session team ↗</a></span><span class="photo-credit">Illustrative photography: <a href="https://unsplash.com/photos/8gAbl776pc0" target="_blank" rel="noopener">Vitaly Gariev</a> &amp; <a href="https://unsplash.com/photos/Su1XYFlftXA" target="_blank" rel="noopener">Hasnain Ayaz</a> / Unsplash.</span></footer>
+<footer class="footer"><span>© Maa Sati Technologies · Build. Learn. Grow.</span><span><a href="mailto:www.satitechinfo@gmail.com">Contact the session team ↗</a></span></footer>
 
 <script>
 (function(){
@@ -168,45 +180,19 @@ window.location.assign('https://docs.google.com/forms/d/e/1FAIpQLSeSf74z6sRA5GCN
 })();
 </script><script>
 (function(){
-const themes=[{"n":"1","name":"Cosmic Explorer","line":"Your ideas.<br><em>Beyond limits.</em>","desc":"Explore the world of coding and AI. Build your first project and discover what you can create.","lab":"MISSION: FIRST PROJECT","caption":"EXPLORE · BUILD · DISCOVER"},{"n":"2","name":"Creator Playground","line":"Big ideas.<br><em>Start small.</em>","desc":"A little curiosity. A little code. A whole lot of possibility. Turn your next idea into something real.","lab":"THE IDEA LAB","caption":"MAKE SOMETHING YOU"},{"n":"3","name":"Code Quest","line":"Ready, player?<br><em>Build your future.</em>","desc":"Level up from using technology to creating it. Learn coding and AI, then complete your first project.","lab":"QUEST 01: CREATE","caption":"LEARN → BUILD → SHOWCASE"},{"n":"4","name":"Future Makers","line":"Make room for<br><em>your next idea.</em>","desc":"Your imagination deserves a place to begin. Learn the skills to bring it to life, one simple step at a time.","lab":"MADE BY YOU","caption":"CURIOSITY LOOKS GOOD ON YOU"},{"n":"5","name":"Dream Lab","line":"Dream it.<br><em>Then build it.</em>","desc":"Bring your creativity to coding and AI. Meet new ideas, try new tools and build a project you can be proud of.","lab":"WELCOME TO YOUR DREAM LAB","caption":"YOUR NEXT CHAPTER STARTS HERE"}];
-const initial=new URLSearchParams(location.search).get('theme')||'1';
-function apply(n){
-const t=themes.find(x=>x.n===n)||themes[0];
-document.body.dataset.theme=t.n;
-document.querySelector('h1').innerHTML=t.line;
+const themes=[{"id":"1","name":"Electric Poster","bg":"#f5ed34","ink":"#21183d","accent":"#21183d","title":"Make something<br><em>worth showing.</em>","eyebrow":"Bold ideas. Bright beginnings.","desc":"Learn coding and AI, then turn an idea into your own mini project."},{"id":"2","name":"Paper Circuit","bg":"#f4f0e7","ink":"#25392d","accent":"#315c42","title":"Curiosity is<br><em>your superpower.</em>","eyebrow":"A fresh page for your ideas.","desc":"Explore the basics, ask questions and build something one step at a time."},{"id":"3","name":"Liquid Mint","bg":"#d9fff0","ink":"#113b33","accent":"#006a56","title":"Fresh ideas.<br><em>Real creations.</em>","eyebrow":"Let your imagination flow.","desc":"Discover creative ways to use coding and AI in a beginner-friendly session."},{"id":"4","name":"Midnight Academy","bg":"#080b19","ink":"#edf3ff","accent":"#b7c7ff","title":"Your next chapter<br><em>starts with code.</em>","eyebrow":"Small steps. Bigger possibilities.","desc":"Learn useful skills, experiment with AI tools and create your first project."},{"id":"5","name":"Sunset Studio","bg":"#fff0e6","ink":"#652e2b","accent":"#b63330","title":"Create your<br><em>next possibility.</em>","eyebrow":"Think it. Try it. Make it.","desc":"Bring your imagination to a week of coding, AI and creative discovery."},{"id":"6","name":"Blueprint Lab","bg":"#1239bb","ink":"#f5f8ff","accent":"#d2ff72","title":"Every great idea<br><em>needs a first draft.</em>","eyebrow":"Plan it. Build it. Show it.","desc":"Explore how websites work and bring your own project idea to life."},{"id":"7","name":"Pixel Arcade","bg":"#20152f","ink":"#fffaeb","accent":"#ffce55","title":"Ready for<br><em>your first build?</em>","eyebrow":"New skills unlocked by practice.","desc":"Explore coding, experiment with AI and complete a creative project of your own."},{"id":"8","name":"Chrome Future","bg":"#e9edf1","ink":"#161a20","accent":"#333e52","title":"Meet the future.<br><em>Make it yours.</em>","eyebrow":"Your ideas deserve a launch.","desc":"Go from curious beginner to confident creator with coding and AI basics."}];
+function apply(id){
+const t=themes.find(x=>x.id===id)||themes[0];
+document.body.dataset.design=t.id;
+document.body.style.setProperty('--bg',t.bg);document.body.style.setProperty('--ink2',t.ink);document.body.style.setProperty('--accent',t.accent);
+document.querySelector('h1').innerHTML=t.title;
 document.querySelector('.intro').textContent=t.desc;
-document.querySelector('.lab-top span').textContent=t.lab;
-document.querySelector('.photo-note').textContent=t.caption;
-document.querySelectorAll('[data-choice]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.choice===t.n)));
+document.querySelector('main>.eyebrow,main>section>.eyebrow').textContent=t.eyebrow;
+document.querySelector('.stage-number').textContent='MAA SATI / '+t.id.padStart(2,'0');
+document.querySelectorAll('[data-choice]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.choice===t.id)));
 document.title=t.name+' • Maa Sati Registration';
-const u=new URL(location.href);u.searchParams.set('theme',t.n);history.replaceState(null,'',u);
+const u=new URL(location.href);u.searchParams.set('theme',t.id);history.replaceState(null,'',u);
 }
 document.querySelectorAll('[data-choice]').forEach(b=>b.addEventListener('click',()=>apply(b.dataset.choice)));
-apply(initial);
-})();</script><script>
-(function(){
-const reduced=matchMedia('(prefers-reduced-motion: reduce)');
-const scene=document.querySelector('.photo-scene');
-if(scene&&matchMedia('(hover:hover) and (pointer:fine)').matches){
- let frame=0;
- scene.addEventListener('pointermove',function(e){
- if(reduced.matches||frame)return;
- const x=e.clientX,y=e.clientY;
- frame=requestAnimationFrame(function(){
- const r=scene.getBoundingClientRect();
- scene.style.setProperty('--photo-x',((x-r.left)/r.width-.5)*-10+'px');
- scene.style.setProperty('--photo-y',((y-r.top)/r.height-.5)*-8+'px');frame=0;
- });});
- scene.addEventListener('pointerleave',function(){if(frame)cancelAnimationFrame(frame);frame=0;scene.style.setProperty('--photo-x','0px');scene.style.setProperty('--photo-y','0px')});
-}
-if('IntersectionObserver' in window){
- const blocks=document.querySelectorAll('.photo-scene,.lab,.benefits>div,.payment-box');
- const obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('is-visible');obs.unobserve(e.target)}})},{threshold:.08});
- blocks.forEach(function(el){el.classList.add('reveal-block');obs.observe(el)});
- document.body.classList.add('motion-ready');
-}
-const progress=document.querySelector('.scroll-progress');let pending=false;
-function update(){const max=document.documentElement.scrollHeight-innerHeight;progress.style.transform='scaleX('+(max>0?Math.min(scrollY/max,1):0)+')';pending=false}
-addEventListener('scroll',function(){if(!pending){pending=true;requestAnimationFrame(update)}},{passive:true});addEventListener('resize',update,{passive:true});update();
-})();
-</script></body></html>
+apply(new URLSearchParams(location.search).get('theme')||'1');
+})();</script></body></html>
