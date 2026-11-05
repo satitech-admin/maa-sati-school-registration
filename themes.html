@@ -89,12 +89,38 @@ h1 em{background:none!important;-webkit-text-fill-color:var(--t-accent);color:va
 [data-theme="5"] .tags span{background:#ffffff0b;border-radius:30px}[data-theme="5"] .registration-cta{background:linear-gradient(110deg,#edb5ff,#a9c5ff)}
 @media(max-width:680px){.theme-picker{padding:15px 20px}.theme-options{gap:7px}.theme-options button{padding:10px 12px;font-size:11px}body[data-theme] h1{font-size:46px;letter-spacing:-2px}.theme-art{height:150px}.theme-options button{flex:1 0 29%}[data-theme="4"] .card{padding:25px 20px!important}}
 @media(prefers-reduced-motion:reduce){.theme-art *{animation:none!important}}
-</style></head><body data-theme="1"><div class="motion-bg" aria-hidden="true"><div class="aurora"></div><div class="aurora second"></div><canvas id="particles"></canvas></div>
+
+/* Real photography and responsive motion */
+.photo-scene{position:relative;margin:28px 0 22px;padding:10px 10px 46px;border-radius:25px;background:var(--t-panel,#10203b);border:1px solid var(--t-line,#6eb7ff40);overflow:visible;--photo-x:0px;--photo-y:0px}
+.photo-main{margin:0;overflow:hidden;border-radius:18px;position:relative;aspect-ratio:16/10;background:#1b2743}
+.photo-main>img{display:block;width:100%;height:100%;object-fit:cover;transform:scale(1.07) translate(var(--photo-x),var(--photo-y));transition:transform .5s ease-out;filter:saturate(.93)}
+.photo-main:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 55%,#05101ddd);pointer-events:none}
+.photo-main figcaption{position:absolute;bottom:18px;left:18px;right:18px;z-index:1;color:#fff;font:600 23px/1.2 'Space Grotesk',sans-serif}
+.photo-inset{position:absolute;right:16px;bottom:-7px;width:32%;aspect-ratio:1.15;border:5px solid var(--t-panel,#10203b);border-radius:17px;object-fit:cover;box-shadow:0 10px 30px #0004;animation:photo-bob 6s ease-in-out infinite}
+.photo-badge{position:absolute;top:26px;left:26px;z-index:1;display:flex;align-items:center;gap:8px;background:#07152bdc;color:#effbff;border:1px solid #c3e9ff60;backdrop-filter:blur(12px);padding:9px 13px;border-radius:99px;font-size:10px;font-weight:700;letter-spacing:1px}
+.photo-badge:before{content:"✦";color:#a5ffdc;animation:spark-turn 10s linear infinite}
+.photo-note{position:absolute;bottom:15px;left:20px;font:11px 'DM Sans',sans-serif;color:var(--t-muted,#a7bad1);max-width:60%}
+.skill-ticker{overflow:hidden;margin:20px 0;border-block:1px solid var(--t-line,#6eb7ff40);padding:12px 0;color:var(--t-accent,#7de9ff);font:600 11px 'Space Grotesk',sans-serif;letter-spacing:1.5px}
+.skill-track{display:flex;width:max-content;animation:skill-slide 25s linear infinite}.skill-track span{white-space:nowrap;padding:0 18px}.skill-ticker:hover .skill-track{animation-play-state:paused}
+.scroll-progress{position:fixed;left:0;top:0;width:100%;height:3px;z-index:50;transform-origin:left;transform:scaleX(0);background:var(--t-accent,#7de9ff);pointer-events:none}
+.benefits>div{transition:transform .25s ease,background .25s ease,border-color .25s ease}.benefits>div:hover{transform:translateY(-5px);background:#8cbcff0b;border-color:var(--t-accent,#7de9ff)}
+.registration-cta{position:relative;overflow:hidden}.registration-cta:after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 20%,#ffffff45 45%,transparent 70%);transform:translateX(-120%);transition:transform .6s;pointer-events:none}.registration-cta:hover:after{transform:translateX(120%)}
+body.motion-ready .reveal-block{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}
+body.motion-ready .reveal-block.is-visible{opacity:1;transform:none}
+[data-theme="2"] .photo-scene{border:2px solid #28232e;box-shadow:7px 7px 0 #28232e;border-radius:10px}
+[data-theme="2"] .photo-main{border-radius:4px}[data-theme="3"] .photo-scene,[data-theme="3"] .photo-main,[data-theme="3"] .photo-inset{border-radius:3px}
+[data-theme="4"] .photo-main{border-radius:80px 80px 15px 15px}[data-theme="4"] .photo-scene{border-radius:90px 90px 20px 20px}
+[data-theme="5"] .photo-scene{box-shadow:0 0 50px #ae70ff22}
+.photo-credit{display:block;font-size:10px;line-height:1.7;margin-top:8px;color:var(--t-muted,#a7bad1)}
+@keyframes photo-bob{50%{transform:translateY(-9px) rotate(2deg)}}
+@keyframes spark-turn{to{transform:rotate(360deg)}}@keyframes skill-slide{to{transform:translateX(-50%)}}
+@media(max-width:680px){.photo-scene{margin-top:23px}.photo-main figcaption{font-size:21px}.photo-badge{font-size:9px;left:22px;top:22px}.photo-inset{animation:none}.photo-note{font-size:10px}.skill-track{animation-duration:32s}}
+@media(prefers-reduced-motion:reduce){.skill-track,.photo-inset,.photo-badge:before{animation:none!important}.photo-main>img{transform:none!important;transition:none!important}body.motion-ready .reveal-block{opacity:1;transform:none;transition:none}.registration-cta:after{display:none}}
+</style></head><body data-theme="1"><div class="scroll-progress" aria-hidden="true"></div><div class="motion-bg" aria-hidden="true"><div class="aurora"></div><div class="aurora second"></div><canvas id="particles"></canvas></div>
 <section class="theme-picker" aria-label="Choose a registration theme"><small>Maa Sati Technologies · 5 registration themes</small><div class="theme-options"><button type="button" data-choice="1" aria-pressed="true">01 · Cosmic Explorer</button><button type="button" data-choice="2" aria-pressed="false">02 · Creator Playground</button><button type="button" data-choice="3" aria-pressed="false">03 · Code Quest</button><button type="button" data-choice="4" aria-pressed="false">04 · Future Makers</button><button type="button" data-choice="5" aria-pressed="false">05 · Dream Lab</button></div><p>Choose a theme to preview it. Registration fields and payment requirements work the same in every theme. <a href="index.html">Current registration ↗</a></p></section><header><div class="brand"><img src="assets/maa-sati-original-logo.png" alt="Maa Sati Tech original logo" style="width:88px;height:88px;object-fit:contain;border-radius:8px"><div>MAA SATI<small>TECHNOLOGIES</small></div></div><span class="pill"><span class="dot"></span>STUDENT REGISTRATION</span></header>
 <main><section><div class="eyebrow">One week. Your first creation.</div><h1>Don't just use tech.<br><em>Learn to build it.</em></h1><p class="intro">Turn your ideas into real projects. Learn coding, AI and better prompting — step by step, starting with the basics.</p><div class="tags"><span>Classes 9–12</span><span>Beginner friendly</span><span>1-week session</span></div>
-<div class="theme-art" aria-hidden="true"><div class="planet"></div><div class="ring"></div><div class="art-code">&gt; start_learning()\n✓ coding + AI
-&gt; build_your_first_project</div><span class="art-caption">EXPLORE · BUILD · DISCOVER</span></div><div class="lab"><div class="lab-top"><span>YOUR FIRST BUILD</span><span>● LIVE LEARNING</span></div><div class="code"><b>&lt;your-future&gt;</b><br>&nbsp; idea + code + AI<br>&nbsp; = something you created ✦<br><b>&lt;/your-future&gt;</b></div><div class="lab-bottom"><span class="orbit" aria-hidden="true">✳</span><div><strong>Small steps. Real possibilities.</strong><small>Think it. Build it. Showcase it.</small></div></div></div>
-<div class="benefits"><div><strong>01 / Code with confidence</strong>HTML, CSS & JavaScript basics.</div><div><strong>02 / Work smarter with AI</strong>AI tools, vibe coding & prompts.</div><div><strong>03 / Make a mini project</strong>Build and present your own idea.</div><div><strong>04 / Earn your certificate</strong>After project submission & approval.</div></div><section class="payment-box" aria-labelledby="paymentTitle"><div class="eyebrow">SESSION PAYMENT</div><h2 id="paymentTitle">Scan to pay</h2><p>After payment, upload a screenshot of the successful transaction. Enter the payment date and time (IST) exactly as shown on your receipt.</p><a href="assets/payment-qr-only.png" target="_blank" rel="noopener" aria-label="Open original payment QR in full size"><img src="assets/payment-qr-only.png" alt="Maa Sati Technologies payment QR scanner" width="328" height="328" style="display:block;width:100%;max-width:280px;height:auto;object-fit:contain;margin:20px auto"></a><div class="payment-links"><a href="assets/payment-qr-only.png" target="_blank" rel="noopener">Open full-size QR ↗</a><a href="assets/payment-qr-only.png" download="Maa-Sati-Payment-QR.png">Download QR ↓</a></div><p class="hint">Upload: 1 image, maximum 10 MB. Google sign-in is required. Payment confirmation follows team verification.</p></section></section>
+<section class="photo-scene" aria-label="Coding and collaboration inspiration"><figure class="photo-main"><img src="assets/student-team.jpg" width="1100" height="619" fetchpriority="high" alt="Students collaborating around a laptop in a classroom"><figcaption>Big ideas start<br>with curious minds.</figcaption></figure><div class="photo-badge">LEARN TOGETHER · CREATE TOGETHER</div><img class="photo-inset" src="assets/student-coding.jpg" width="700" height="467" loading="lazy" alt="A learner working on code on a laptop"><span class="photo-note">Imagine what you could build.</span></section><div class="lab"><div class="lab-top"><span>YOUR FIRST BUILD</span><span>● LIVE LEARNING</span></div><div class="code"><b>&lt;your-future&gt;</b><br>&nbsp; idea + code + AI<br>&nbsp; = something you created ✦<br><b>&lt;/your-future&gt;</b></div><div class="lab-bottom"><span class="orbit" aria-hidden="true">✳</span><div><strong>Small steps. Real possibilities.</strong><small>Think it. Build it. Showcase it.</small></div></div></div>
+<div class="skill-ticker" aria-label="Learn HTML, CSS, AI tools, creative thinking and prompt engineering"><div class="skill-track" aria-hidden="true"><span>✦ &nbsp; HTML & CSS</span><span>✦ &nbsp; AI TOOLS</span><span>✦ &nbsp; YOUR FIRST PROJECT</span><span>✦ &nbsp; CREATIVE THINKING</span><span>✦ &nbsp; PROMPT ENGINEERING</span><span>✦ &nbsp; BUILD & SHOWCASE</span><span>✦ &nbsp; HTML & CSS</span><span>✦ &nbsp; AI TOOLS</span><span>✦ &nbsp; YOUR FIRST PROJECT</span><span>✦ &nbsp; CREATIVE THINKING</span><span>✦ &nbsp; PROMPT ENGINEERING</span><span>✦ &nbsp; BUILD & SHOWCASE</span></div></div><div class="benefits"><div><strong>01 / Code with confidence</strong>HTML, CSS & JavaScript basics.</div><div><strong>02 / Work smarter with AI</strong>AI tools, vibe coding & prompts.</div><div><strong>03 / Make a mini project</strong>Build and present your own idea.</div><div><strong>04 / Earn your certificate</strong>After project submission & approval.</div></div><section class="payment-box" aria-labelledby="paymentTitle"><div class="eyebrow">SESSION PAYMENT</div><h2 id="paymentTitle">Scan to pay</h2><p>After payment, upload a screenshot of the successful transaction. Enter the payment date and time (IST) exactly as shown on your receipt.</p><a href="assets/payment-qr-only.png" target="_blank" rel="noopener" aria-label="Open original payment QR in full size"><img src="assets/payment-qr-only.png" alt="Maa Sati Technologies payment QR scanner" width="328" height="328" style="display:block;width:100%;max-width:280px;height:auto;object-fit:contain;margin:20px auto"></a><div class="payment-links"><a href="assets/payment-qr-only.png" target="_blank" rel="noopener">Open full-size QR ↗</a><a href="assets/payment-qr-only.png" download="Maa-Sati-Payment-QR.png">Download QR ↓</a></div><p class="hint">Upload: 1 image, maximum 10 MB. Google sign-in is required. Payment confirmation follows team verification.</p></section></section>
 <section class="card" aria-labelledby="formTitle" style="padding:28px"><div class="eyebrow">Student registration · Step 1 of 2</div><h2 id="formTitle">Your creator journey starts here.</h2><p class="sub">Enter your student details below. In the next step, review your details, enter your email address, upload your payment screenshot and click Submit.</p>
 <form id="studentRegistration">
 <div class="section-title">01 &nbsp; STUDENT DETAILS</div>
@@ -115,7 +141,7 @@ h1 em{background:none!important;-webkit-text-fill-color:var(--t-accent);color:va
 <button class="registration-cta" type="submit" style="width:100%;border:0">Continue to screenshot upload →</button>
 <p class="hint" role="status">Registration is complete only after you click Submit on the next Google Form. If Google asks about an older draft, choose Continue to use these new details.</p></form>
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSf74z6sRA5GCNtO-6asZafJ6UGExi-uwbC0MPRt6gYCqKsQ/viewform" target="_blank" rel="noopener" style="display:inline-block;margin-top:22px">Open registration directly ↗</a></section></main>
-<footer class="footer"><span>© Maa Sati Technologies · Build. Learn. Grow.</span><span><a href="mailto:www.satitechinfo@gmail.com">Contact the session team ↗</a></span></footer>
+<footer class="footer"><span>© Maa Sati Technologies · Build. Learn. Grow.</span><span><a href="mailto:www.satitechinfo@gmail.com">Contact the session team ↗</a></span><span class="photo-credit">Illustrative photography: <a href="https://unsplash.com/photos/8gAbl776pc0" target="_blank" rel="noopener">Vitaly Gariev</a> &amp; <a href="https://unsplash.com/photos/Su1XYFlftXA" target="_blank" rel="noopener">Hasnain Ayaz</a> / Unsplash.</span></footer>
 
 <script>
 (function(){
@@ -150,11 +176,37 @@ document.body.dataset.theme=t.n;
 document.querySelector('h1').innerHTML=t.line;
 document.querySelector('.intro').textContent=t.desc;
 document.querySelector('.lab-top span').textContent=t.lab;
-document.querySelector('.art-caption').textContent=t.caption;
+document.querySelector('.photo-note').textContent=t.caption;
 document.querySelectorAll('[data-choice]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.choice===t.n)));
 document.title=t.name+' • Maa Sati Registration';
 const u=new URL(location.href);u.searchParams.set('theme',t.n);history.replaceState(null,'',u);
 }
 document.querySelectorAll('[data-choice]').forEach(b=>b.addEventListener('click',()=>apply(b.dataset.choice)));
 apply(initial);
-})();</script></body></html>
+})();</script><script>
+(function(){
+const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+const scene=document.querySelector('.photo-scene');
+if(scene&&matchMedia('(hover:hover) and (pointer:fine)').matches){
+ let frame=0;
+ scene.addEventListener('pointermove',function(e){
+ if(reduced.matches||frame)return;
+ const x=e.clientX,y=e.clientY;
+ frame=requestAnimationFrame(function(){
+ const r=scene.getBoundingClientRect();
+ scene.style.setProperty('--photo-x',((x-r.left)/r.width-.5)*-10+'px');
+ scene.style.setProperty('--photo-y',((y-r.top)/r.height-.5)*-8+'px');frame=0;
+ });});
+ scene.addEventListener('pointerleave',function(){if(frame)cancelAnimationFrame(frame);frame=0;scene.style.setProperty('--photo-x','0px');scene.style.setProperty('--photo-y','0px')});
+}
+if('IntersectionObserver' in window){
+ const blocks=document.querySelectorAll('.photo-scene,.lab,.benefits>div,.payment-box');
+ const obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('is-visible');obs.unobserve(e.target)}})},{threshold:.08});
+ blocks.forEach(function(el){el.classList.add('reveal-block');obs.observe(el)});
+ document.body.classList.add('motion-ready');
+}
+const progress=document.querySelector('.scroll-progress');let pending=false;
+function update(){const max=document.documentElement.scrollHeight-innerHeight;progress.style.transform='scaleX('+(max>0?Math.min(scrollY/max,1):0)+')';pending=false}
+addEventListener('scroll',function(){if(!pending){pending=true;requestAnimationFrame(update)}},{passive:true});addEventListener('resize',update,{passive:true});update();
+})();
+</script></body></html>
