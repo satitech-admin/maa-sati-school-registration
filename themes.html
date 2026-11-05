@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Maa Sati Technologies • Student Registration</title><style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+:root{--ink:#172d2c;--muted:#607370;--green:#164e43;--lime:#d9f477;--paper:#f4f5ed}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:15px 'DM Sans',sans-serif}a{color:inherit}header{max-width:1240px;margin:auto;padding:25px 30px;display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid #dbe0d2}.brand{display:flex;align-items:center;gap:12px;font-family:'Space Grotesk',sans-serif;font-weight:700;letter-spacing:-.5px;font-size:20px}.brand small{display:block;font:10px 'DM Sans';letter-spacing:2.8px;margin-top:3px}.symbol{width:44px;height:44px;border-radius:14px;background:var(--green);color:var(--lime);display:grid;place-items:center;font-size:24px}.pill{font-size:11px;letter-spacing:1px;border:1px solid #c6d0bd;padding:9px 12px;border-radius:50px;white-space:nowrap}.dot{display:inline-block;width:7px;height:7px;background:#457c38;border-radius:50%;margin-right:7px}main{max-width:1240px;margin:auto;padding:46px 30px 70px;display:grid;grid-template-columns:1fr 1.07fr;gap:55px;align-items:start}.eyebrow{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#55714b}h1{font-family:'Space Grotesk',sans-serif;font-size:62px;line-height:1.03;letter-spacing:-3px;margin:19px 0 22px}h1 em{font-style:normal;color:#4d7951}.intro{line-height:1.8;color:var(--muted);font-size:16px;max-width:450px}.tags{display:flex;gap:8px;flex-wrap:wrap;margin:24px 0}.tags span{padding:8px 12px;background:white;border:1px solid #dde3d5;border-radius:8px;font-size:12px}.lab{background:var(--green);border-radius:24px;padding:25px;color:#fff;position:relative;overflow:hidden;margin-top:28px}.lab:after{content:'';position:absolute;width:190px;height:190px;border:1px solid #ffffff22;border-radius:50%;right:-55px;top:-65px}.lab-top{display:flex;justify-content:space-between;font-size:10px;letter-spacing:1.7px;color:#c4d5bf}.code{font-family:monospace;font-size:15px;line-height:1.9;margin:22px 0;color:#d2e7d7}.code b{color:var(--lime);font-weight:400}.lab-bottom{display:flex;align-items:center;gap:12px;border-top:1px solid #ffffff24;padding-top:17px}.orbit{font-size:27px;animation:float 4s ease-in-out infinite}.lab-bottom strong{font-family:'Space Grotesk';font-size:17px}.lab-bottom small{display:block;margin-top:3px;color:#bbd1c6;font-size:11px}.benefits{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin:25px 0}.benefits div{font-size:12px;color:var(--muted);line-height:1.5}.benefits strong{display:block;color:var(--ink);font-size:13px;margin-bottom:4px}.fee{display:flex;align-items:center;gap:13px;font-size:12px;color:var(--muted)}.fee b{color:var(--ink);font-family:'Space Grotesk';font-size:32px}.card{background:#fff;border:1px solid #e0e5d7;border-radius:25px;padding:30px;box-shadow:0 18px 60px #1b382309}.card-top{display:flex;align-items:center;justify-content:space-between;gap:8px}.step{font-size:10px;letter-spacing:1.2px;color:var(--muted)}.card h2{font-family:'Space Grotesk';font-size:28px;letter-spacing:-1px;margin:14px 0 8px}.sub{font-size:13px;line-height:1.6;color:var(--muted);margin:0 0 24px}.divider{height:1px;background:#edf0e7;margin:23px 0}.section-title{font-size:11px;font-weight:700;letter-spacing:1.2px;margin-bottom:17px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:17px}.wide{grid-column:1/-1}label{display:block;font-size:12px;font-weight:600;margin-bottom:7px}label span{color:#7a8a76}input,select{font:14px 'DM Sans';color:var(--ink);width:100%;background:#fafbf7;border:1px solid #dce3d6;border-radius:10px;min-height:47px;padding:12px;outline:none}input:focus,select:focus{border-color:#4e7951;box-shadow:0 0 0 3px #e6f1dd}input::placeholder{color:#8c9789;font-size:12px}.hint{font-size:10px;color:var(--muted);line-height:1.6;margin:5px 0 0}.consent{display:flex;gap:9px;align-items:flex-start;font-size:11px;line-height:1.65;font-weight:400;color:var(--muted);margin:20px 0 15px}.consent input{width:16px;min-height:16px;margin:3px 0;accent-color:var(--green);flex-shrink:0}.submit{width:100%;border:0;border-radius:11px;padding:16px;background:var(--green);color:white;font:600 14px 'DM Sans';display:flex;justify-content:space-between;cursor:pointer;transition:transform .2s,background .2s}.submit:hover{background:#236457;transform:translateY(-1px)}.submit:disabled{opacity:.6;cursor:wait}.trust{text-align:center;font-size:10px;color:var(--muted);margin:13px 0 0}.notice{font-size:11px;line-height:1.7;background:#f2f6e8;padding:13px;border-radius:10px;margin-top:20px;color:#52634b}#status{font-size:13px;line-height:1.7;margin:14px 0;color:#9e3428}.success{padding:35px 10px;text-align:center}.success .check{background:var(--lime);border-radius:50%;width:70px;height:70px;display:grid;place-items:center;font-size:32px;margin:auto}.success p{line-height:1.8;color:var(--muted)}#regId{display:block;background:#f1f5e7;padding:15px;border-radius:10px;font:600 20px 'Space Grotesk';letter-spacing:1px}.hp{position:absolute;left:-10000px}.footer{max-width:1180px;border-top:1px solid #dbe0d2;margin:auto;padding:22px 0;display:flex;justify-content:space-between;font-size:11px;color:var(--muted);gap:15px}.footer a{text-decoration:none}.footer a:hover{text-decoration:underline}[hidden]{display:none!important}@keyframes float{50%{transform:translateY(-5px) rotate(8deg)}}@media(max-width:900px){main{gap:26px;padding-top:30px}h1{font-size:47px}.card{padding:24px}.footer{margin:0 30px}}@media(max-width:680px){header{padding:19px 20px}.brand{font-size:16px}.brand small{font-size:8px}.pill{font-size:9px;padding:7px}main{grid-template-columns:1fr;padding:30px 20px 45px;gap:28px}h1{font-size:49px}.intro{font-size:14px}.lab{margin-top:20px}.benefits{margin-bottom:15px}.card{padding:23px 19px}.grid{gap:16px 12px}.footer{flex-direction:column;margin:0 20px}.fee b{font-size:28px}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* Live blue-hour theme; registration integration remains unchanged. */
+:root{--ink:#edf5ff;--muted:#a7bad1;--green:#102746;--lime:#7de9ff;--paper:#050b19}
+body{background:radial-gradient(ellipse at 20% 5%,#142549 0,transparent 48%),#050b19;isolation:isolate}
+.motion-bg{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.motion-bg:before{content:"";position:absolute;inset:0;background-image:linear-gradient(#67b6ff0a 1px,transparent 1px),linear-gradient(90deg,#67b6ff0a 1px,transparent 1px);background-size:64px 64px;mask-image:linear-gradient(#000,transparent 95%);animation:grid-drift 28s linear infinite}
+.aurora{position:absolute;width:65vw;height:65vw;max-width:900px;max-height:900px;border-radius:50%;filter:blur(90px);opacity:.2;animation:aurora-drift 19s ease-in-out infinite alternate;background:radial-gradient(circle,#157cff,transparent 65%);left:-25%;top:-20%}
+.aurora.second{background:radial-gradient(circle,#884dff,transparent 65%);left:auto;right:-30%;top:25%;animation-delay:-8s;animation-duration:24s}
+#particles{position:absolute;inset:0;width:100%;height:100%;opacity:.65}
+header{border-color:#5caaff20;position:relative}header .brand img{box-shadow:0 0 30px #2399ff30;border:1px solid #6bd4ff30}
+.pill{border-color:#69caff3b;background:#0e244b80;color:#bde8ff}.dot{background:#6cf6dd;box-shadow:0 0 12px #6cf6dd;animation:beacon 3s ease-in-out infinite}
+.eyebrow{color:#77d9ff}h1{letter-spacing:-2.8px}h1 em{color:#7de9ff;background:linear-gradient(110deg,#6ce8ff,#97a8ff,#ce9bff,#6ce8ff);background-size:220% auto;background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:headline-light 9s linear infinite}
+.tags span{background:#12213cbb;border-color:#89c4ff26;color:#c3d7ed;backdrop-filter:blur(12px);transition:transform .25s,border-color .25s}.tags span:hover{transform:translateY(-4px);border-color:#7de9ff80}
+.lab{background:linear-gradient(135deg,#123559aa,#14203eaa);border:1px solid #5dbdff48;box-shadow:0 16px 60px #0003,inset 0 1px #b5e3ff15;backdrop-filter:blur(15px)}
+.lab:after{border-color:#6bd7ff33;animation:ring-turn 25s linear infinite;border-radius:38%;width:220px;height:220px}
+.lab-top,.lab-bottom small{color:#97c5e4}.code{color:#bbd4ee}.code b{color:#81e8ff}.lab-bottom{border-color:#b7dfff24}
+.benefits div{padding:12px;border-left:1px solid #78c4ff33}.benefits strong{color:#deefff}.fee b{color:#8eeaff}
+.card{background:linear-gradient(160deg,#10203bed,#0b162bed);border-color:#8bbfff30;box-shadow:0 25px 85px #0005,inset 0 1px #b5e3ff15;backdrop-filter:blur(18px);min-width:0;position:relative}
+.card a{color:#99eaff;text-underline-offset:4px}.card iframe{border-radius:14px;background:#f0ecfd;width:100%}
+.footer{border-color:#77bdff25;color:#9cb3ce}a:focus-visible{outline:2px solid #90e8ff;outline-offset:6px}
+@keyframes grid-drift{to{transform:translateY(64px)}}@keyframes aurora-drift{to{transform:translate(18%,22%) scale(1.18)}}
+@keyframes headline-light{to{background-position:220% center}}@keyframes beacon{50%{box-shadow:0 0 4px #6cf6dd;opacity:.55}}@keyframes ring-turn{to{transform:rotate(360deg)}}
+@media(max-width:680px){header .brand img{width:68px!important;height:68px!important}.brand{gap:9px}header{gap:12px}.pill{font-size:8px;letter-spacing:.4px;padding:8px}.aurora{width:120vw;height:120vw;filter:blur(55px)}.benefits{gap:10px}.benefits div{padding:9px}.card{backdrop-filter:none}h1{letter-spacing:-2px}}
+@media(prefers-reduced-motion:reduce){.motion-bg:before{animation:none}#particles{display:none}.aurora{animation:none}}
+.payment-box{margin-top:30px;padding:24px;border:1px solid #75cbff40;background:#0a1935bb;border-radius:22px}.payment-box h2{font:600 28px 'Space Grotesk';margin:12px 0}.payment-box p{font-size:13px;line-height:1.8;color:var(--muted)}.payment-links{display:flex;flex-wrap:wrap;gap:18px;color:#9be6ff;font-size:12px}.payment-box a:focus-visible{outline:2px solid #9be6ff}@media(max-width:680px){.payment-box{padding:18px}} .registration-cta{display:block;padding:17px 18px;border-radius:12px;background:linear-gradient(110deg,#6ae5ff,#a9b8ff);color:#07162c!important;font-size:14px;font-weight:700;text-decoration:none;text-align:center;box-shadow:0 8px 28px #4fbaff26;transition:transform .2s}.registration-cta:hover{transform:translateY(-2px)} #studentRegistration input,#studentRegistration select{background:#0a1730;color:#e5f3ff;border-color:#6ca9de44;color-scheme:dark}#studentRegistration label{color:#d5e7fb}#studentRegistration input[type=file]{font-size:12px;padding:12px 8px}#studentRegistration .divider{background:#79bcff30}#studentRegistration .registration-cta:disabled{cursor:not-allowed} 
+/* Five student registration themes; original QR and submission flow retained. */
+:root{--t-bg:#060b20;--t-panel:#101b3c;--t-ink:#eff6ff;--t-muted:#b2c3e3;--t-accent:#7de9ff;--t-line:#6eb7ff40;--t-input:#08132d;--t-shadow:0 25px 80px #0005}
+body{background:var(--t-bg)!important;color:var(--t-ink);padding-bottom:30px}
+.theme-picker{position:relative;z-index:2;max-width:1240px;margin:18px auto 0;padding:18px 30px;border-bottom:1px solid var(--t-line)}
+.theme-picker small{display:block;font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:var(--t-muted);margin-bottom:12px}
+.theme-options{display:flex;gap:9px;flex-wrap:wrap}.theme-options button{border:1px solid var(--t-line);background:var(--t-panel);color:var(--t-ink);padding:11px 15px;border-radius:99px;font:600 12px 'DM Sans',sans-serif;cursor:pointer}
+.theme-options button[aria-pressed=true]{background:var(--t-accent);color:var(--t-bg);border-color:var(--t-accent)}.theme-picker p{font-size:12px;color:var(--t-muted);margin-bottom:0}.theme-picker a{color:var(--t-accent)}
+header,.footer{border-color:var(--t-line)}.intro,.sub,.hint,.trust,.step,.consent,.footer,.benefits div,.payment-box p{color:var(--t-muted)!important}
+h1,h2,.brand,.benefits strong,#studentRegistration label{color:var(--t-ink)!important}
+h1 em{background:none!important;-webkit-text-fill-color:var(--t-accent);color:var(--t-accent)}
+.eyebrow{color:var(--t-accent)}.card,.payment-box,.lab{background:var(--t-panel)!important;border-color:var(--t-line)!important;box-shadow:var(--t-shadow)}
+.tags span,.pill{background:var(--t-panel);border-color:var(--t-line);color:var(--t-ink)}
+#studentRegistration input,#studentRegistration select{background:var(--t-input)!important;color:var(--t-ink)!important;border-color:var(--t-line)!important;color-scheme:dark}
+#studentRegistration input:focus,#studentRegistration select:focus{outline:2px solid var(--t-accent);outline-offset:2px;box-shadow:none}
+#studentRegistration .divider{background:var(--t-line)}.section-title{color:var(--t-accent)}
+.notice{background:var(--t-input);color:var(--t-muted)}.registration-cta{background:var(--t-accent);color:var(--t-bg)!important;box-shadow:none}
+.card a,.payment-links{color:var(--t-accent)}.lab-top,.lab-bottom small,.code{color:var(--t-muted)}.code b{color:var(--t-accent)}
+.theme-art{height:180px;margin:24px 0;position:relative;display:grid;place-items:center;overflow:hidden;border:1px solid var(--t-line);border-radius:24px;background:var(--t-panel)}
+.theme-art .planet{width:112px;height:112px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#daefff,#4f75f7 45%,#252451 75%);box-shadow:0 0 70px #7c68ff70;animation:float 5s ease-in-out infinite}
+.theme-art .ring{position:absolute;width:230px;height:70px;border:2px solid var(--t-accent);border-radius:50%;transform:rotate(-25deg);box-shadow:0 0 25px #7de9ff30}
+.theme-art .art-caption{position:absolute;bottom:14px;right:18px;font:11px monospace;letter-spacing:1px;color:var(--t-muted)}
+.theme-art .art-code{display:none}
+[data-theme="1"] h1{font-size:70px;max-width:500px}[data-theme="1"] .card{border-top:3px solid #7de9ff}
+[data-theme="2"]{--t-bg:#f6f2e8;--t-panel:#fffdf6;--t-ink:#232326;--t-muted:#57555f;--t-accent:#6442cc;--t-line:#292331;--t-input:#f6f1ff;--t-shadow:7px 7px 0 #28232e}
+[data-theme="2"] .motion-bg{display:none}[data-theme="2"]{background-image:radial-gradient(#c1b8a5 1px,transparent 1px)!important;background-size:22px 22px!important}
+[data-theme="2"] h1{font-size:62px;transform:rotate(-2deg);letter-spacing:-3px}[data-theme="2"] h1 em{background:#d3f56a!important;-webkit-text-fill-color:#222;padding:0 8px}
+[data-theme="2"] .card,[data-theme="2"] .payment-box,[data-theme="2"] .lab{border:2px solid #28232e;border-radius:12px;backdrop-filter:none}
+[data-theme="2"] .tags span{border:2px solid #28232e;box-shadow:3px 3px 0 #28232e;border-radius:4px;transform:rotate(-3deg)}
+[data-theme="2"] .tags span:nth-child(2){transform:rotate(3deg);background:#ffe88d}
+[data-theme="2"] .theme-art{background:#d3f56a;border:2px solid #28232e;border-radius:10px;transform:rotate(2deg)}
+[data-theme="2"] .planet{border-radius:22px;background:#a58bf5;box-shadow:8px 8px 0 #292331;transform:rotate(-12deg)}
+[data-theme="2"] .ring{width:65px;height:65px;left:20%;top:25%;border:4px solid #28232e;border-radius:14px;transform:rotate(20deg)}
+[data-theme="2"] #studentRegistration input,[data-theme="2"] #studentRegistration select{color-scheme:light;border-radius:5px}
+[data-theme="2"] .registration-cta{border:2px solid #292331!important;border-radius:6px;box-shadow:4px 4px 0 #292331}
+[data-theme="3"]{--t-bg:#070d0b;--t-panel:#0c1712;--t-ink:#dfffe9;--t-muted:#9bbbaa;--t-accent:#8bff8d;--t-line:#8bff8d40;--t-input:#06100a;--t-shadow:none}
+[data-theme="3"]{font-family:monospace}[data-theme="3"] h1,[data-theme="3"] h2,[data-theme="3"] .brand,[data-theme="3"] label{font-family:monospace}
+[data-theme="3"] h1{font-size:54px;line-height:1.12;letter-spacing:-2px}
+[data-theme="3"] .card,[data-theme="3"] .lab,[data-theme="3"] .payment-box,[data-theme="3"] .tags span,[data-theme="3"] .theme-art{border-radius:4px;backdrop-filter:none}
+[data-theme="3"] .motion-bg .aurora{display:none}[data-theme="3"] .motion-bg:before{background-image:linear-gradient(#8bff8d0b 1px,transparent 1px);background-size:100% 4px;mask-image:none}
+[data-theme="3"] .theme-art{justify-items:start;padding:25px}
+[data-theme="3"] .theme-art .planet,[data-theme="3"] .theme-art .ring{display:none}
+[data-theme="3"] .art-code{display:block;color:#8bff8d;font:15px/1.9 monospace;white-space:pre-line}
+[data-theme="3"] .art-code:after{content:"▌";animation:beacon 1s steps(2) infinite}
+[data-theme="3"] .registration-cta{border-radius:4px;font-family:monospace}
+[data-theme="4"]{--t-bg:#fff8ef;--t-panel:#fff;--t-ink:#30223c;--t-muted:#736279;--t-accent:#a43d18;--t-line:#d5bfae;--t-input:#fff8f0;--t-shadow:0 16px 45px #784d1710}
+[data-theme="4"] .motion-bg{display:none}[data-theme="4"] h1{font-family:Georgia,serif;font-size:68px;line-height:1.04;letter-spacing:-3px}
+[data-theme="4"] h1 em{font-style:italic}[data-theme="4"] .card{border-radius:36px 36px 12px 12px;padding:34px!important}
+[data-theme="4"] .lab{border-radius:50px 50px 14px 14px;background:#f8e4d1!important;backdrop-filter:none}
+[data-theme="4"] .theme-art{background:#f8d68c;border-radius:100px 100px 20px 20px}
+[data-theme="4"] .planet{background:linear-gradient(135deg,#ee9576,#c36aa2);border-radius:50% 50% 15% 15%;box-shadow:none}
+[data-theme="4"] .ring{border-color:#a43d18;width:190px;height:190px;right:12%;top:45%;border-radius:50%;opacity:.3}
+[data-theme="4"] #studentRegistration input,[data-theme="4"] #studentRegistration select{color-scheme:light;border-radius:14px}
+[data-theme="4"] .tags span{border-radius:30px;background:#fff0d3}[data-theme="4"] .registration-cta{border-radius:40px;color:white!important}
+[data-theme="5"]{--t-bg:#15102f;--t-panel:#251b49d9;--t-ink:#fcf4ff;--t-muted:#c2b5df;--t-accent:#edb5ff;--t-line:#c09bff50;--t-input:#1a1232;--t-shadow:0 24px 65px #09031d60}
+[data-theme="5"]{background:radial-gradient(ellipse at 5% 0%,#5b2f8d,transparent 60%),#15102f!important}
+[data-theme="5"] h1{font-size:66px;letter-spacing:-3px}[data-theme="5"] .card{border-radius:30px;border-top:1px solid #ffffff66}
+[data-theme="5"] .theme-art{background:linear-gradient(135deg,#44307b,#7b4d92);border-radius:30px}
+[data-theme="5"] .planet{background:radial-gradient(circle at 30% 30%,#ffdfef,#c892ff 50%,#7545be);box-shadow:0 0 55px #f9aaff88}
+[data-theme="5"] .ring{width:155px;height:155px;transform:rotate(25deg);border-radius:30%;animation:ring-turn 22s linear infinite}
+[data-theme="5"] .tags span{background:#ffffff0b;border-radius:30px}[data-theme="5"] .registration-cta{background:linear-gradient(110deg,#edb5ff,#a9c5ff)}
+@media(max-width:680px){.theme-picker{padding:15px 20px}.theme-options{gap:7px}.theme-options button{padding:10px 12px;font-size:11px}body[data-theme] h1{font-size:46px;letter-spacing:-2px}.theme-art{height:150px}.theme-options button{flex:1 0 29%}[data-theme="4"] .card{padding:25px 20px!important}}
+@media(prefers-reduced-motion:reduce){.theme-art *{animation:none!important}}
+</style></head><body data-theme="1"><div class="motion-bg" aria-hidden="true"><div class="aurora"></div><div class="aurora second"></div><canvas id="particles"></canvas></div>
+<section class="theme-picker" aria-label="Choose a registration theme"><small>Maa Sati Technologies · 5 registration themes</small><div class="theme-options"><button type="button" data-choice="1" aria-pressed="true">01 · Cosmic Explorer</button><button type="button" data-choice="2" aria-pressed="false">02 · Creator Playground</button><button type="button" data-choice="3" aria-pressed="false">03 · Code Quest</button><button type="button" data-choice="4" aria-pressed="false">04 · Future Makers</button><button type="button" data-choice="5" aria-pressed="false">05 · Dream Lab</button></div><p>Choose a theme to preview it. Registration fields and payment requirements work the same in every theme. <a href="index.html">Current registration ↗</a></p></section><header><div class="brand"><img src="assets/maa-sati-original-logo.png" alt="Maa Sati Tech original logo" style="width:88px;height:88px;object-fit:contain;border-radius:8px"><div>MAA SATI<small>TECHNOLOGIES</small></div></div><span class="pill"><span class="dot"></span>STUDENT REGISTRATION</span></header>
+<main><section><div class="eyebrow">One week. Your first creation.</div><h1>Don't just use tech.<br><em>Learn to build it.</em></h1><p class="intro">Turn your ideas into real projects. Learn coding, AI and better prompting — step by step, starting with the basics.</p><div class="tags"><span>Classes 9–12</span><span>Beginner friendly</span><span>1-week session</span></div>
+<div class="theme-art" aria-hidden="true"><div class="planet"></div><div class="ring"></div><div class="art-code">&gt; start_learning()\n✓ coding + AI
+&gt; build_your_first_project</div><span class="art-caption">EXPLORE · BUILD · DISCOVER</span></div><div class="lab"><div class="lab-top"><span>YOUR FIRST BUILD</span><span>● LIVE LEARNING</span></div><div class="code"><b>&lt;your-future&gt;</b><br>&nbsp; idea + code + AI<br>&nbsp; = something you created ✦<br><b>&lt;/your-future&gt;</b></div><div class="lab-bottom"><span class="orbit" aria-hidden="true">✳</span><div><strong>Small steps. Real possibilities.</strong><small>Think it. Build it. Showcase it.</small></div></div></div>
+<div class="benefits"><div><strong>01 / Code with confidence</strong>HTML, CSS & JavaScript basics.</div><div><strong>02 / Work smarter with AI</strong>AI tools, vibe coding & prompts.</div><div><strong>03 / Make a mini project</strong>Build and present your own idea.</div><div><strong>04 / Earn your certificate</strong>After project submission & approval.</div></div><section class="payment-box" aria-labelledby="paymentTitle"><div class="eyebrow">SESSION PAYMENT</div><h2 id="paymentTitle">Scan to pay</h2><p>After payment, upload a screenshot of the successful transaction. Enter the payment date and time (IST) exactly as shown on your receipt.</p><a href="assets/payment-qr-only.png" target="_blank" rel="noopener" aria-label="Open original payment QR in full size"><img src="assets/payment-qr-only.png" alt="Maa Sati Technologies payment QR scanner" width="328" height="328" style="display:block;width:100%;max-width:280px;height:auto;object-fit:contain;margin:20px auto"></a><div class="payment-links"><a href="assets/payment-qr-only.png" target="_blank" rel="noopener">Open full-size QR ↗</a><a href="assets/payment-qr-only.png" download="Maa-Sati-Payment-QR.png">Download QR ↓</a></div><p class="hint">Upload: 1 image, maximum 10 MB. Google sign-in is required. Payment confirmation follows team verification.</p></section></section>
+<section class="card" aria-labelledby="formTitle" style="padding:28px"><div class="eyebrow">Student registration · Step 1 of 2</div><h2 id="formTitle">Your creator journey starts here.</h2><p class="sub">Enter your student details below. In the next step, review your details, enter your email address, upload your payment screenshot and click Submit.</p>
+<form id="studentRegistration">
+<div class="section-title">01 &nbsp; STUDENT DETAILS</div>
+<div class="grid">
+<div class="wide"><label for="studentName">Student full name *</label><input id="studentName" name="studentName" autocomplete="name" required minlength="2" maxlength="80" placeholder="Student’s full name"></div>
+<div class="wide"><label for="studentEmail">Email address *</label><input id="studentEmail" name="studentEmail" type="email" autocomplete="email" required maxlength="160" placeholder="student@example.com"><p class="hint">Use the student’s or parent’s email address. Enter this email again in the final Google Form to receive a copy of your registration.</p></div>
+<div><label for="studentDob">Date of birth *</label><input id="studentDob" name="studentDob" type="date" required max="2026-11-05"></div>
+<div><label for="studentClass">Class *</label><select id="studentClass" name="studentClass" required><option value="">Select class</option><option>Class 9</option><option>Class 10</option><option>Class 11</option><option>Class 12</option></select></div>
+<div class="wide"><label for="studentSchool">School name *</label><input id="studentSchool" name="studentSchool" required minlength="2" maxlength="140" placeholder="Full school name"></div>
+<div class="wide"><label for="studentCity">City / town *</label><input id="studentCity" name="studentCity" autocomplete="address-level2" required minlength="2" maxlength="80" placeholder="City / town"></div>
+</div>
+<div class="divider"></div><div class="section-title">02 &nbsp; PARENT / GUARDIAN CONTACT</div>
+<label for="guardianPhone">Parent / guardian WhatsApp number *</label><input id="guardianPhone" name="guardianPhone" type="tel" inputmode="numeric" autocomplete="tel-national" required pattern="[6-9][0-9]{9}" maxlength="10" placeholder="10-digit mobile number">
+<div class="divider"></div><div class="section-title">03 &nbsp; PAYMENT DETAILS</div>
+<div class="grid"><div><label for="paymentDate">Date of payment *</label><input id="paymentDate" name="paymentDate" type="date" required></div><div><label for="paymentTime">Time of payment (IST) *</label><input id="paymentTime" name="paymentTime" type="time" required></div>
+<div class="wide"><p class="notice">Payment screenshot upload is mandatory in Step 2. Keep one image ready (maximum 10 MB). Google sign-in required.</p></div></div>
+<label class="consent"><input type="checkbox" name="guardianConsent" required><span>I confirm the details are correct and my parent/guardian agrees to this registration and session-related contact.</span></label>
+<button class="registration-cta" type="submit" style="width:100%;border:0">Continue to screenshot upload →</button>
+<p class="hint" role="status">Registration is complete only after you click Submit on the next Google Form. If Google asks about an older draft, choose Continue to use these new details.</p></form>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeSf74z6sRA5GCNtO-6asZafJ6UGExi-uwbC0MPRt6gYCqKsQ/viewform" target="_blank" rel="noopener" style="display:inline-block;margin-top:22px">Open registration directly ↗</a></section></main>
+<footer class="footer"><span>© Maa Sati Technologies · Build. Learn. Grow.</span><span><a href="mailto:www.satitechinfo@gmail.com">Contact the session team ↗</a></span></footer>
+
+<script>
+(function(){
+ const canvas=document.getElementById('particles'),ctx=canvas.getContext('2d');
+ const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+ let w=0,h=0,points=[],raf=0,last=0,pointer={x:-1000,y:-1000};
+ function resize(){w=innerWidth;h=innerHeight;const d=Math.min(devicePixelRatio||1,1.5);canvas.width=w*d;canvas.height=h*d;ctx.setTransform(d,0,0,d,0,0);points=Array.from({length:w<700?23:48},()=>({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-.5)*.2,vy:-(.1+Math.random()*.28),r:.7+Math.random()*1.4}));}
+ function frame(t){if(document.hidden||reduced.matches){raf=0;return}if(t-last>32){const dt=Math.min((t-last)/33,2);last=t;ctx.clearRect(0,0,w,h);for(let i=0;i<points.length;i++){const p=points[i];p.x+=p.vx*dt;p.y+=p.vy*dt;if(p.y<0)p.y=h;if(p.x<0)p.x=w;if(p.x>w)p.x=0;ctx.fillStyle='#87d7ff';ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fill();for(let j=i+1;j<points.length;j++){const q=points[j],d=Math.hypot(p.x-q.x,p.y-q.y);if(d<120){ctx.strokeStyle='rgba(105,170,255,'+(.12*(1-d/120))+')';ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(q.x,q.y);ctx.stroke();}}const pd=Math.hypot(p.x-pointer.x,p.y-pointer.y);if(pd<160){ctx.strokeStyle='rgba(125,233,255,'+(.35*(1-pd/160))+')';ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(pointer.x,pointer.y);ctx.stroke();}}}raf=requestAnimationFrame(frame);}
+ function start(){if(!raf&&!document.hidden&&!reduced.matches){last=performance.now();raf=requestAnimationFrame(frame)}}
+ addEventListener('resize',resize,{passive:true});addEventListener('pointermove',e=>{pointer={x:e.clientX,y:e.clientY}},{passive:true});document.addEventListener('pointerleave',()=>{pointer.x=-1000;pointer.y=-1000});
+ document.addEventListener('visibilitychange',start);reduced.addEventListener('change',start);resize();start();
+})();
+</script><script>
+(function(){
+const form=document.getElementById('studentRegistration');
+document.getElementById('studentDob').max=new Date().toLocaleDateString('en-CA');
+form.addEventListener('submit',function(e){
+e.preventDefault();if(!form.reportValidity())return;
+const data=new FormData(form),params=new URLSearchParams({usp:'pp_url'});
+const fields={studentName:'1313584093',studentDob:'712584448',studentClass:'1070715214',studentSchool:'1618507011',studentCity:'1034458136',guardianPhone:'2117607106',paymentDate:'1300532698',paymentTime:'1958834772'};
+for(const [key,id] of Object.entries(fields))params.set('entry.'+id,data.get(key).trim());
+window.location.assign('https://docs.google.com/forms/d/e/1FAIpQLSeSf74z6sRA5GCNtO-6asZafJ6UGExi-uwbC0MPRt6gYCqKsQ/viewform?'+params.toString());
+});
+})();
+</script><script>
+(function(){
+const themes=[{"n":"1","name":"Cosmic Explorer","line":"Your ideas.<br><em>Beyond limits.</em>","desc":"Explore the world of coding and AI. Build your first project and discover what you can create.","lab":"MISSION: FIRST PROJECT","caption":"EXPLORE · BUILD · DISCOVER"},{"n":"2","name":"Creator Playground","line":"Big ideas.<br><em>Start small.</em>","desc":"A little curiosity. A little code. A whole lot of possibility. Turn your next idea into something real.","lab":"THE IDEA LAB","caption":"MAKE SOMETHING YOU"},{"n":"3","name":"Code Quest","line":"Ready, player?<br><em>Build your future.</em>","desc":"Level up from using technology to creating it. Learn coding and AI, then complete your first project.","lab":"QUEST 01: CREATE","caption":"LEARN → BUILD → SHOWCASE"},{"n":"4","name":"Future Makers","line":"Make room for<br><em>your next idea.</em>","desc":"Your imagination deserves a place to begin. Learn the skills to bring it to life, one simple step at a time.","lab":"MADE BY YOU","caption":"CURIOSITY LOOKS GOOD ON YOU"},{"n":"5","name":"Dream Lab","line":"Dream it.<br><em>Then build it.</em>","desc":"Bring your creativity to coding and AI. Meet new ideas, try new tools and build a project you can be proud of.","lab":"WELCOME TO YOUR DREAM LAB","caption":"YOUR NEXT CHAPTER STARTS HERE"}];
+const initial=new URLSearchParams(location.search).get('theme')||'1';
+function apply(n){
+const t=themes.find(x=>x.n===n)||themes[0];
+document.body.dataset.theme=t.n;
+document.querySelector('h1').innerHTML=t.line;
+document.querySelector('.intro').textContent=t.desc;
+document.querySelector('.lab-top span').textContent=t.lab;
+document.querySelector('.art-caption').textContent=t.caption;
+document.querySelectorAll('[data-choice]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.choice===t.n)));
+document.title=t.name+' • Maa Sati Registration';
+const u=new URL(location.href);u.searchParams.set('theme',t.n);history.replaceState(null,'',u);
+}
+document.querySelectorAll('[data-choice]').forEach(b=>b.addEventListener('click',()=>apply(b.dataset.choice)));
+apply(initial);
+})();</script></body></html>
