@@ -6,7 +6,7 @@ One-week AI & Coding session for Classes 9–12. Fee: ₹199 per student.
 
 ## Current implementation
 - GitHub Pages serves the branded HTML page and original uncropped logo.
-- The branded page opens the published Google Form in a new tab for Google sign-in and payment-proof upload.
+- The branded page links directly to the published Google Form without collecting or prefilling student details. Enter details once in Google Forms. The landing pages hide the registration link and payment QR at midnight IST after 5 December 2026. The Google Form owner must also close responses at the cutoff to enforce it for direct form access.
 - Required fields: responder email, student name, class, school, city, guardian mobile, guardian permission, payment screenshot, payment date and payment time (IST).
 - Mobile validation: 10 digits, starting with 6–9.
 - Google Forms response receipts are configured to **Always**.
